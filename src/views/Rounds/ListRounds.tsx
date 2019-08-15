@@ -27,6 +27,7 @@ class ListRounds extends Component<ListRoundsProps> {
                 <span> vs </span>
                 <span>{players[1].name}</span>
                 {stageType ? <p>{`Cenario ${stages[index].name}`}</p> : null}
+                {stageType ? <p>{`Cenario ${stages[index].type}`}</p> : null}
               </li>
             ),
           )}

@@ -24,7 +24,13 @@ class AddPlayers extends Component<AddPlayersProps> {
       <div>
         <h2>Escreva o nome dos jogadores separados por vírgulas</h2>
         <form onSubmit={this.onSubmit}>
-          <textarea ref={this.playersInput} name="players" cols={3} rows={5} />
+          <textarea
+            style={{ width: "100%", minHeight: "60px" }}
+            ref={this.playersInput}
+            name="players"
+            cols={3}
+            rows={5}
+          />
           <button type="submit">Adicionar</button>
         </form>
         <Link to="/players/list">Ir para lista</Link>

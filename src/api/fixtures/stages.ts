@@ -516,4 +516,14 @@ export default [
     name: "Dracula’s Castle",
     type: "omega-or-battlefield",
   },
+  {
+    id: v4(),
+    name: "Mementos",
+    type: "hazardless",
+  },
+  {
+    id: v4(),
+    name: "Yggdrasil's Altar",
+    type: "normal",
+  },
 ];

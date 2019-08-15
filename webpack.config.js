@@ -12,6 +12,7 @@ module.exports = {
   output: {
     filename: "[name].js",
     publicPath: "/tourney/",
+    // publicPath: "/",
     path: path.resolve(__dirname, "dist"),
   },
   devtool: "cheap-module-eval-source-map",
@@ -34,10 +35,13 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      meta: {
+        viewport: "width=device-width, initial-scale=1, shrink-to-fit=no",
+      },
+    }),
     new ForkIsCheckerWebpackPlugin(),
     new webpack.NamedModulesPlugin(),
-    new HtmlWebpackPlugin(),
   ],
   optimization: {
     splitChunks: {
